@@ -1,16 +1,17 @@
 .header{
+    width: 100%;
+    
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
-.header__title a{
-    color: #2d545e;
-    font-weight: 800;
+.header__title a img{
+    width: 150px;
 }
-.header__list{
+.header__nav ul{
     display: flex;
     padding: 1em;
-    background-color: #e1b382;
+    background-color: #dfc3a2;
     border-bottom-left-radius: 30px;
     width: 800px;
 }
@@ -26,8 +27,11 @@
 .header__item__first a{
     border-left: none;
 }
+.header__btn{
+    display: none;
+}
 @media (max-width:1000px){
-    .header__list{
+    .header__nav ul{
         width: 600px;
     }
     .header__item a {
@@ -35,7 +39,7 @@
     }
 }
 @media (max-width:800px){
-    .header__list{
+    .header__nav ul{
         width: 400px;
     }
     .header__item a {
@@ -43,7 +47,7 @@
     }
 }
 @media (max-width:600px){
-    .header__list{
+    .header__nav ul{
         width: 300px;
     }
     .header__item a {
@@ -51,32 +55,50 @@
     }
 }
 @media (max-width:500px){
-    .header__title a{
-        font-size: 24px;
-    }
-    .header__list{
-        width: 280px;
-        font-size: 13px;
+    .header__title a img{
+        width: 100px;
     }
     .header__item a {
         padding: 0 .8em;
     }
-    /* .header{
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    .header__title:hover .header__list{
-
-    }
-    .header__list{
-        width: 100px;
-        flex-direction: column;
+    .header__btn{
+        display: inline-block;
+        margin: .5em;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: #dfc3a2;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        gap: 2em;
-        padding: 2em 0;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
-    .header__list a{
+    .header__nav ul{
+        position: absolute;
+        opacity: 0;
+        right: 0;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5em;
+        background-color: transparent;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        background-color: #dfc3a2;
+        width: 100px;
+        box-shadow: -3px 5px 10px rgb(118, 118, 118, .5);
+        z-index: 100;
+        transition: opacity 500ms;
+    }
+    .header__item a{
         border-left: none;
-    } */
+    }
+    .show{
+        opacity: 1;
+    }
 }
 

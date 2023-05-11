@@ -23,7 +23,7 @@ const Cart = () => {
     const handlePurchase = () => {
         buyThisCart()
     } 
-
+ 
     return (
         <div className='cart__container'>
             <div className='cart'>

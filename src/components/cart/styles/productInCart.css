@@ -66,3 +66,33 @@
 .cart__product__footer-price::before{
     content: '$';
 }
+@media(max-width:450px){
+    .cart__product__header{
+        padding: 1em;
+    }
+    .cart__product__section-title{
+        font-size: 12px;
+    }
+    .cart__product__btn{
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cart__product__btn i{
+        font-size: 9px;
+    }
+    .cart__product__footer{
+        margin-left: .5em;
+        gap: .5em;
+    }
+    .cart__product__footer-word{
+        font-size: 8px;
+    }
+    .cart__product__footer-number{
+        font-size: 10px;
+    }
+    .cart__product__footer-price{
+        font-size: 10px;
+    }
+}

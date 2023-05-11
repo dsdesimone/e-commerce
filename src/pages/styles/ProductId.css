@@ -6,9 +6,9 @@
     align-items: center;
     border: 2px solid var(--night-blue-shadow);
     border-radius: 10px;
-    margin: 4em;
+    margin: 1em;
     box-shadow: 5px 5px 10px grey;
-}
+} 
 @media(max-width: 1000px){
     .productid__main{
         display: flex;

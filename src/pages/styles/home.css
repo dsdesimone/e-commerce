@@ -1,7 +1,83 @@
 .home{
+    margin-top: -100px;
+    z-index: 0;
+    
+}
+.home__filters{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+    margin-right: 2em;
+    
+}
+.home__filters__input{
+    justify-self: center;
+    
+}
+.home__filters__input-input{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #dfc3a2;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.home__filters__input-btn{
+    height: 30px;
+    padding: .5em;
+    background-color: #dfc3a2;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.home__products{
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+@media(max-width:900px){
+    .home__filters{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1em;
+        margin-left: 1em;
+        
+    }
+    .home__filters__input{
+        grid-column: span 2;
+        justify-self: center;
+        
+    }
+}
+@media(max-width:710px){
+    .home__filters__input-input{
+        width: 150px;
+        height: 25px;
+        font-size: 12px;
+    }
+    .home__filters__input-btn{
+        font-size: 12px;
+        height: 25px;
+    }
+}
+@media(max-width:500px){
+    .home__filters{
+        justify-content: center;
+    }
+    .home{
+        margin-top: -20px;
+    }
+    
+}
+@media(max-width:360px){
+    .home__filters__input-input{
+        width: 100px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .home__filters__input-btn{
+        font-size: 10px;
+        height: 20px;
+    }
+    
 }

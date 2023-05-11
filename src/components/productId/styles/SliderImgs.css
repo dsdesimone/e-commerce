@@ -51,24 +51,13 @@
     }
 }
 @media(max-width: 500px){
-    .slider{
-        width: 300px;
-    }
+    
     .slider__arrowhead{
         width: 1.2em;
+        margin: 0 1em;
     }
     .slider__arrowhead i{
         font-size: 12px;
     }
 }
-@media(max-width: 400px){
-    .slider{
-        width: 250px;
-    }
-    .slider__arrowhead{
-        width: .8em;
-    }
-    .slider__arrowhead i{
-        font-size: 10px;
-    }
-}
+

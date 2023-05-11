@@ -4,13 +4,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3em 0;
+    margin: 1em 0;
+}
+.cart__title{
+    color: #2252a4;
 }
 .cart{
     width: 100%;
     max-width: 600px;
+    margin: 0 .7em;
     padding: 2em;
-    border: 1px solid #12343b;
+    border: 2px solid #dfc3a2;
     border-radius: 10px;
 }
 .cart__items{
@@ -40,4 +44,11 @@
     background-color: #e1b382;
     color: #12343b;
     font-weight: 500;
+}
+@media(max-width:400px){
+    .cart__title{
+        font-size: 20px;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
 }

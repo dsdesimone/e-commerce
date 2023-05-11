@@ -36,7 +36,7 @@ const Home = () => {
                 return price >= from
             }
             if(!from && to){
-                return price <= from
+                return price <= to
             }
             if(!from && !to){
                 return true
@@ -45,13 +45,26 @@ const Home = () => {
 
         console.log(productsFilter)
     return (
-        <div className=''>
-            <input ref={input} onChange={handleChangeInput} type="text" />
-            <FilterCategory />
-            <FilterByPrice 
-                setFromTo={setFromTo}
-            />
-            <div className='home'>
+        <div className='home'>
+            <div className='home__filters'>
+                <div className='home__filters__input'>
+                    <input className='home__filters__input-input' ref={input} onChange={handleChangeInput} type="text" />
+                    <button className='home__filters__input-btn'>Search</button>
+                </div>
+                
+                <div className='home__filters__category'>
+                    <FilterCategory />
+                </div>
+
+                <div className='home__filters__price'>
+                    <FilterByPrice 
+                        setFromTo={setFromTo}
+                    />
+                </div>
+            </div>
+            
+            
+            <div className='home__products'>
                 {
                     productsFilter?.map(prod => (
                         <CardProduct 

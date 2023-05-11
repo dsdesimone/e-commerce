@@ -9,12 +9,11 @@ const ProductCart = ({ prodCart }) => {
   const handleDeleteCart = () => {
     deleteProductFromCart(prodCart.id)
   }
- 
-  console.log(prodCart)
+  
   return (
     <article className='cart__product'>
       <header className='cart__product__header'>
-        <img className='cart__product__header-img' src={prodCart.product.images[0].url} alt="" />
+        <img className='cart__product__header-img' src={prodCart.product.images[2].url} alt="" />
       </header>
       <section className='cart__product__section'>
         <h3 className='cart__product__section-title'>{prodCart.product.title}</h3>

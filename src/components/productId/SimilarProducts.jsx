@@ -17,9 +17,9 @@ const SimilarProducts = ({ product }) => {
 
 
     return (
-        <div>
-            <h2>Discover similar products</h2>
-            <div>
+        <div className='similar__products'>
+            <h2 className='similar__products__title'>Discover similar products</h2>
+            <div className='similar__products__items'>
                 {
                     filterProducts?.map(prod => {
                         if(prod.id !== product.id){
