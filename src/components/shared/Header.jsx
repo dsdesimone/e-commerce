@@ -19,15 +19,16 @@ const Header = () => {
   return (
     <header className='header'>
         <h1 className='header__title'><Link to='/'><img src="./photos/logo.jpg" alt="" /></Link></h1>
+        <button onClick={handleMenu} className='header__btn'><i class="fa-solid fa-bars"></i></button>
         <nav className='header__nav'>
-          <ul className={hasClass ? 'show' : ''}>
+          <ul className={hasClass ? 'hola' : ''}>
             <li className='header__item header__item__first'><Link to='/login'>Login</Link></li>
             <li className='header__item'><Link to='/register'>Register</Link></li>
             <li className='header__item'><Link to='/purchases'>Purchases</Link></li>
             <li className='header__item'><Link to='/cart'>Cart</Link></li>
           </ul>
         </nav>
-        <button onClick={handleMenu} className='header__btn'><i class="fa-solid fa-bars"></i></button>
+        
     </header>
   )
 }
