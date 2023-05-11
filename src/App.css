@@ -1,0 +1,40 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, p, span, div, button, a, i, ul, li{
+    margin: 0;
+    padding: 0;
+}
+button{
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+}
+input{
+    border-inline: none;
+    font-family: inherit;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+
+/*ROOT*/
+:root{
+    --sand-tan: #e1b382;
+    --sand-tan-shadow: #c89666;
+    --night-blue: #2d545e;
+    --night-blue-shadow: #12343b;
+}
