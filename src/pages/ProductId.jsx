@@ -4,7 +4,7 @@ import useFetch from '../hooks/useFetch'
 import ProductIdInfo from '../components/productId/ProductIdInfo'
 import SliderImgs from '../components/productId/SliderImgs'
 import SimilarProducts from '../components/productId/SimilarProducts'
-import './styles/productId.css'
+import './styles/ProductId.css'
 
 const ProductId = () => {
 
