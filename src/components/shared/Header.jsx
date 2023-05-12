@@ -9,7 +9,8 @@ const Header = () => {
   const handleMenu = () => {
     if(hasClass){
       setHasClass(false)
-    } else if(!hasClass){
+    } 
+    if(!hasClass){
       setHasClass(true)
     }
     
@@ -21,7 +22,7 @@ const Header = () => {
         <h1 className='header__title'><Link to='/'><img src="./photos/logo.jpg" alt="" /></Link></h1>
         <button onClick={handleMenu} className='header__btn'><i class="fa-solid fa-bars"></i></button>
         <nav className='header__nav'>
-          <ul className={hasClass ? 'hola' : ''}>
+          <ul className={`${hasClass ? 'show' : ''}`}>
             <li className='header__item header__item__first'><Link to='/login'>Login</Link></li>
             <li className='header__item'><Link to='/register'>Register</Link></li>
             <li className='header__item'><Link to='/purchases'>Purchases</Link></li>
